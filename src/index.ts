@@ -16,7 +16,7 @@ export function registerRouteNotFoundHandler(handler: Middleware["routeHandler"]
   routeNotFoundError.routeHandler = handler
 }
 
-export function registerFetchEventListener(middlewareBasePath?: string): void {
+export function registerFetchEventListener(middlewareBasePath: string): void {
   addEventListener('fetch', (event: FetchEvent) => {
     const endPoint = new URL(event.request.url).pathname.replace(`/${middlewareBasePath}/`, '');
     const route = registeredRouteHandlers.find(mw => endPoint.match(mw.routePattern)) || routeNotFoundError
