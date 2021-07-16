@@ -15,6 +15,9 @@
     "name": "André Bauer",
     "url": "https://github.com/AnBauer"
   },
+  "bugs": {
+    "url": "https://github.com/AnBauer/cloudflare-worker-middleware/issues"
+  },
   "license": "MIT OR Apache-2.0",
   "eslintConfig": {
     "root": true,
@@ -40,5 +43,10 @@
     "typescript": "^4.3.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
-  }
+  },
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "middleware"
+  ]
 }
