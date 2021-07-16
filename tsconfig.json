@@ -14,7 +14,8 @@
       "@cloudflare/workers-types",
       "@types/jest",
       "@types/service-worker-mock"
-    ]
+    ],
+    "declaration": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "test"]

@@ -1,15 +1,20 @@
 {
-  "name": "worker-typescript-template",
+  "name": "cloudflare-worker-middleware",
   "version": "1.0.0",
-  "description": "Cloudflare worker TypeScript template",
-  "main": "dist/worker.js",
+  "description": "Simple worker middleware in Typescript for cloudflare",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "webpack",
     "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
     "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
-    "test": "jest --config jestconfig.json --verbose"
+    "test": "jest --config jestconfig.json --verbose",
+    "prepublish": "tsc"
   },
-  "author": "author",
+  "author": {
+    "name": "André Bauer",
+    "url": "https://github.com/AnBauer"
+  },
   "license": "MIT OR Apache-2.0",
   "eslintConfig": {
     "root": true,
